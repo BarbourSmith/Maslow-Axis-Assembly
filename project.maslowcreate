@@ -10,6 +10,87 @@
             "topLevel": true,
             "allAtoms": [
                 {
+                    "atomType": "GitHubMolecule",
+                    "name": "Maslow Spool",
+                    "x": 198,
+                    "y": 224,
+                    "uniqueID": 164331,
+                    "projectID": "197909874",
+                    "ioValues": []
+                },
+                {
+                    "atomType": "GitHubMolecule",
+                    "name": "Motor Mount",
+                    "x": 305,
+                    "y": 104,
+                    "uniqueID": 549019,
+                    "projectID": "197399777",
+                    "ioValues": []
+                },
+                {
+                    "atomType": "Rotate",
+                    "name": "Rotate",
+                    "x": 413,
+                    "y": 198,
+                    "uniqueID": 421769,
+                    "ioValues": [
+                        {
+                            "name": "x-axis degrees",
+                            "ioValue": 90
+                        },
+                        {
+                            "name": "y-axis degrees",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "z-axis degrees",
+                            "ioValue": 0
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Translate",
+                    "name": "Translate",
+                    "x": 611,
+                    "y": 217,
+                    "uniqueID": 892512,
+                    "ioValues": [
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ]
+                },
+                {
+                    "atomType": "Assembly",
+                    "name": "Assembly",
+                    "x": 727,
+                    "y": 97,
+                    "uniqueID": 682688,
+                    "ioValues": [
+                        {
+                            "name": "3D shape 330199",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "3D shape 146169",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "3D shape 217798",
+                            "ioValue": 10
+                        }
+                    ]
+                },
+                {
                     "atomType": "Output",
                     "name": "Output",
                     "x": 1316,
@@ -17,7 +98,37 @@
                     "ioValues": []
                 }
             ],
-            "allConnectors": [],
+            "allConnectors": [
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 164331,
+                    "ap2ID": 421769
+                },
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "3D shape 146169",
+                    "ap1ID": 549019,
+                    "ap2ID": 682688
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap1ID": 421769,
+                    "ap2ID": 892512
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "3D shape 330199",
+                    "ap1ID": 892512,
+                    "ap2ID": 682688
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": 682688
+                }
+            ],
             "fileTypeVersion": 1
         }
     ],
